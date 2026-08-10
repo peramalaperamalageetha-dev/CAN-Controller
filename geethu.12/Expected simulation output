@@ -1,0 +1,39 @@
+================================================
+             CAN CONTROLLER TESTBENCH
+================================================
+
+-----------------------------------------------
+RESET TEST
+-----------------------------------------------
+RESET TEST : PASS
+
+-----------------------------------------------
+TEST 1 : CAN FRAME TRANSMISSION
+-----------------------------------------------
+TX Identifier = 0x123
+TX Data       = 0xA5
+TX DONE = 1
+TRANSMISSION TEST : PASS
+
+-----------------------------------------------
+TEST 2 : CAN LOOPBACK RECEIVE
+-----------------------------------------------
+RX Identifier = 0x123
+RX Data       = 0xA5
+IDENTIFIER TEST : PASS
+DATA TEST : PASS
+
+-----------------------------------------------
+TEST 3 : SECOND CAN FRAME
+-----------------------------------------------
+TX Identifier = 0x055
+TX Data       = 0x3C
+RX Identifier = 0x055
+RX Data       = 0x3C
+SECOND ID TEST : PASS
+SECOND DATA TEST : PASS
+
+================================================
+          CAN CONTROLLER TEST : PASS
+          ALL TESTS PASSED
+================================================
